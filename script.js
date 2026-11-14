@@ -64,8 +64,8 @@ quiz.addEventListener('click', (e) => {
     steps[step].hidden = false;
   } else {
     verdict.textContent =
-      score <= 1 ? "Verdict : supporter en chef. Le ravito a besoin de toi (et le 12 km t'attend si tu changes d'avis)."
-      : score <= 4 ? 'Verdict : le 12 km ! Assez pour mériter la bière, pas trop pour la savourer.'
+      score <= 1 ? "Verdict : supporter en chef. Le ravito a besoin de toi (et le 10 km t'attend si tu changes d'avis)."
+      : score <= 4 ? 'Verdict : le 10 km ! Assez pour mériter la bière, pas trop pour la savourer.'
       : 'Verdict : le 30 km. Tu le savais déjà, avoue.';
     result.hidden = false;
   }

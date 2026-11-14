@@ -15,5 +15,4 @@ python3 -m http.server 8000
 ## À compléter
 
 - Cartes des parcours : remplacer les blocs `EMPLACEMENT CARTE` dans `index.html` par l'iframe de la carte (uMap, OpenStreetMap, Komoot, Strava…).
-- Distance exacte du format court (12 km pour l'instant, entre 10 et 15 km).
 - Horaires, logement, prix, lien d'inscription.

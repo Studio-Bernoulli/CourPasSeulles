@@ -63,7 +63,7 @@ a { color: inherit; }
   border-bottom: 3px solid var(--green-700);
 }
 .topbar__brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 900; font-size: 1.1rem; color: var(--green-700); }
-.topbar__brand img { border-radius: 8px; }
+.topbar__brand img { width: 52px; height: 52px; border-radius: 10px; }
 .topbar__nav { display: flex; align-items: center; gap: 22px; }
 .topbar__nav a:not(.btn) { text-decoration: none; font-weight: 600; color: var(--green-700); position: relative; }
 .topbar__nav a:not(.btn)::after {
@@ -277,3 +277,14 @@ a { color: inherit; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Cartes indicatives des parcours */
+.map__placeholder .beach { fill: #f3e7c4; }
+.map__placeholder .route--back { stroke: var(--green-500); animation-direction: reverse; }
+.map__placeholder .town circle { fill: var(--white); stroke: var(--green-700); stroke-width: 3; }
+.map__placeholder .town--home circle { fill: var(--green-700); }
+.map__placeholder .town text { text-anchor: middle; font-size: 13px; }
+.map__placeholder .town--home text { font-weight: 900; }
+.map__placeholder .turn circle { fill: var(--mint-300); stroke: var(--green-700); stroke-width: 3; }
+.map__placeholder .turn text { text-anchor: middle; font-size: 16px; font-weight: 900; }
+.map__placeholder .compass { font: 700 12px var(--mono); fill: var(--green-600); }
