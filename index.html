@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CourPasSeulles · 15-16-17 mai 2027 · Courseulles-sur-Mer</title>
+  <meta name="description" content="Un weekend entre potes et une course à Courseulles-sur-Mer, les 15, 16 et 17 mai 2027. Deux formats : 12 km et 30 km.">
+  <meta name="theme-color" content="#005227">
+  <link rel="icon" type="image/svg+xml" href="assets/courpasseulles-logo-fond-vert.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="topbar__brand" href="#top" aria-label="Retour en haut">
+    <img src="assets/courpasseulles-logo-fond-vert.svg" alt="" width="40" height="40">
+    <span>CourPasSeulles</span>
+  </a>
+  <button class="topbar__burger" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav" class="topbar__nav">
+    <a href="#courses">Les courses</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#programme">Programme</a>
+    <a href="#infos">Infos pratiques</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn--small" href="#inscription">Je viens !</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__logo">
+      <img src="assets/courpasseulles-logo.svg" alt="CourPasSeulles" width="520" height="520">
+    </div>
+    <div class="hero__text">
+      <p class="tag">Weekend de Pentecôte 2027</p>
+      <h1>Un weekend entre potes.<br>Une course.<br><em>Personne ne court seul.</em></h1>
+      <ul class="hero__facts">
+        <li><b>15 · 16 · 17</b><span>mai 2027</span></li>
+        <li><b>Courseulles</b><span>sur-Mer, Calvados</span></li>
+        <li><b>2 formats</b><span>12 km &amp; 30 km</span></li>
+      </ul>
+      <div class="countdown" aria-live="polite">
+        <div><b data-cd="d">--</b><span>jours</span></div>
+        <div><b data-cd="h">--</b><span>heures</span></div>
+        <div><b data-cd="m">--</b><span>min</span></div>
+        <div><b data-cd="s">--</b><span>sec</span></div>
+      </div>
+      <div class="hero__cta">
+        <a class="btn" href="#inscription">Je m'inscris</a>
+        <a class="btn btn--ghost" href="#courses">Voir les courses</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Cours pas seul·e</span><span>✦</span><span>Plage, sable &amp; huîtres</span><span>✦</span>
+      <span>12 km ou 30 km</span><span>✦</span><span>Apéro à l'arrivée</span><span>✦</span>
+      <span>Cours pas seul·e</span><span>✦</span><span>Plage, sable &amp; huîtres</span><span>✦</span>
+      <span>12 km ou 30 km</span><span>✦</span><span>Apéro à l'arrivée</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- COURSES -->
+  <section id="courses" class="section">
+    <h2 class="section__title"><span>01</span> Les courses</h2>
+    <p class="section__lead">Deux formats, un seul principe : on part ensemble, on arrive ensemble (ou presque). Choisis ton camp.</p>
+
+    <div class="races">
+      <article class="race race--short">
+        <header>
+          <p class="race__badge">La Balade qui pique</p>
+          <p class="race__dist"><b>12</b> km</p>
+          <p class="race__sub">Format 10-15 km · distance exacte à caler</p>
+        </header>
+        <ul class="race__stats">
+          <li><span>Départ</span><b>Dimanche 16 mai, 10h*</b></li>
+          <li><span>Terrain</span><b>Digue, plage, chemins</b></li>
+          <li><span>Dénivelé</span><b>Plat comme la Manche</b></li>
+          <li><span>Pour qui ?</span><b>Tout le monde, vraiment</b></li>
+        </ul>
+        <div class="meter" aria-label="Difficulté 2 sur 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+        <a class="btn btn--light" href="#parcours" data-route="short">Voir le parcours</a>
+      </article>
+
+      <article class="race race--long">
+        <header>
+          <p class="race__badge">Le Grand Large</p>
+          <p class="race__dist"><b>30</b> km</p>
+          <p class="race__sub">Pour celles et ceux qui ont une montre qui coûte cher</p>
+        </header>
+        <ul class="race__stats">
+          <li><span>Départ</span><b>Dimanche 16 mai, 9h*</b></li>
+          <li><span>Terrain</span><b>Côte de Nacre, sentiers</b></li>
+          <li><span>Dénivelé</span><b>Quelques dunes sournoises</b></li>
+          <li><span>Pour qui ?</span><b>Les motivé·es (et les fous)</b></li>
+        </ul>
+        <div class="meter" aria-label="Difficulté 4 sur 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <a class="btn" href="#parcours" data-route="long">Voir le parcours</a>
+      </article>
+    </div>
+    <p class="note">* Horaires provisoires, tout est encore à confirmer.</p>
+
+    <!-- Mini quiz -->
+    <div class="quiz" id="quiz">
+      <h3>Pas sûr·e de ton format ? Fais le test.</h3>
+      <div class="quiz__q" data-step="0">
+        <p>Ton dernier footing, c'était…</p>
+        <div class="quiz__a">
+          <button data-score="0">Il y a… euh… 2019 ?</button>
+          <button data-score="1">Le mois dernier</button>
+          <button data-score="2">Ce matin, avant le café</button>
+        </div>
+      </div>
+      <div class="quiz__q" data-step="1" hidden>
+        <p>Après la course, tu veux surtout…</p>
+        <div class="quiz__a">
+          <button data-score="0">Un plateau d'huîtres</button>
+          <button data-score="1">Une bière fraîche</button>
+          <button data-score="2">Battre mon record sur Strava</button>
+        </div>
+      </div>
+      <div class="quiz__q" data-step="2" hidden>
+        <p>Le vent de face sur la digue, ça te…</p>
+        <div class="quiz__a">
+          <button data-score="0">Fait rentrer à l'hôtel</button>
+          <button data-score="1">Rafraîchit</button>
+          <button data-score="2">Motive</button>
+        </div>
+      </div>
+      <div class="quiz__result" hidden>
+        <p class="quiz__verdict"></p>
+        <button class="btn btn--small btn--ghost quiz__reset">Recommencer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours" class="section section--mint">
+    <h2 class="section__title"><span>02</span> Les parcours</h2>
+    <p class="section__lead">Les tracés arrivent bientôt. En attendant, voici à quoi ça pourrait ressembler.</p>
+
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-tab="short">12 km</button>
+      <button role="tab" aria-selected="false" data-tab="long">30 km</button>
+    </div>
+
+    <div class="maps">
+      <figure class="map" data-panel="short">
+        <!-- EMPLACEMENT CARTE 12 KM : remplacer ce bloc par l'iframe de la carte (uMap, OpenStreetMap, Strava, Komoot…) -->
+        <div class="map__placeholder">
+          <svg viewBox="0 0 600 340" role="img" aria-label="Tracé indicatif du 12 km">
+            <path class="sea" d="M0 0 H600 V110 C520 125 450 95 380 112 C300 130 220 100 140 118 C80 130 30 110 0 120 Z"/>
+            <path class="route" d="M90 160 C150 140 230 150 300 145 C370 140 450 150 510 160 C540 200 500 250 430 250 C360 250 300 230 240 240 C170 250 110 230 90 160 Z"/>
+            <circle class="pin" cx="90" cy="160" r="12"/>
+            <text x="110" y="195">Départ / Arrivée</text>
+            <text class="sea-label" x="300" y="60">La Manche</text>
+          </svg>
+          <figcaption>
+            <b>Carte du 12 km à venir</b>
+            <span>Tracé indicatif, ne pas suivre aveuglément !</span>
+          </figcaption>
+        </div>
+      </figure>
+      <figure class="map" data-panel="long" hidden>
+        <!-- EMPLACEMENT CARTE 30 KM : remplacer ce bloc par l'iframe de la carte -->
+        <div class="map__placeholder">
+          <svg viewBox="0 0 600 340" role="img" aria-label="Tracé indicatif du 30 km">
+            <path class="sea" d="M0 0 H600 V110 C520 125 450 95 380 112 C300 130 220 100 140 118 C80 130 30 110 0 120 Z"/>
+            <path class="route" d="M60 150 C120 135 200 145 280 140 C360 135 450 145 560 150 C580 190 560 240 520 270 C470 300 400 290 340 300 C270 310 200 280 150 300 C100 315 60 280 70 230 C75 200 50 180 60 150 Z"/>
+            <circle class="pin" cx="60" cy="150" r="12"/>
+            <text x="80" y="185">Départ / Arrivée</text>
+            <text class="sea-label" x="300" y="60">La Manche</text>
+          </svg>
+          <figcaption>
+            <b>Carte du 30 km à venir</b>
+            <span>Tracé indicatif, on vous promet de la côte et du vent.</span>
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROGRAMME -->
+  <section id="programme" class="section">
+    <h2 class="section__title"><span>03</span> Le programme</h2>
+    <p class="section__lead">Trois jours, une course, beaucoup de temps pour le reste. Programme provisoire.</p>
+
+    <div class="days">
+      <article class="day">
+        <p class="day__date"><b>15</b> Samedi</p>
+        <h3>On arrive !</h3>
+        <ul>
+          <li><time>Après-midi</time> Arrivées, installation</li>
+          <li><time>17h</time> Retrait des dossards</li>
+          <li><time>19h</time> Pasta party géante</li>
+          <li><time>22h</time> Au lit (on y croit)</li>
+        </ul>
+      </article>
+      <article class="day day--big">
+        <p class="day__date"><b>16</b> Dimanche</p>
+        <h3>Jour de course</h3>
+        <ul>
+          <li><time>9h</time> Départ du 30 km</li>
+          <li><time>10h</time> Départ du 12 km</li>
+          <li><time>12h</time> Ravito final &amp; apéro à l'arrivée</li>
+          <li><time>Soir</time> Grande soirée, remise des prix farfelus</li>
+        </ul>
+      </article>
+      <article class="day">
+        <p class="day__date"><b>17</b> Lundi</p>
+        <h3>On récupère</h3>
+        <ul>
+          <li><time>Matin</time> Brunch des courbatures</li>
+          <li><time>Midi</time> Baignade (pour les courageux)</li>
+          <li><time>Après-midi</time> Départs, au revoir, larmes</li>
+        </ul>
+      </article>
+    </div>
+    <p class="note">Lundi 17 mai 2027 = lundi de Pentecôte, férié. Pratique.</p>
+  </section>
+
+  <!-- INFOS -->
+  <section id="infos" class="section section--dark">
+    <h2 class="section__title"><span>04</span> Infos pratiques</h2>
+    <div class="infos">
+      <div class="info">
+        <h3>Y aller</h3>
+        <p>Courseulles-sur-Mer, Calvados, sur la Côte de Nacre. Environ 3h de Paris en voiture. En train : gare de Caen, puis 25 min de route. On organise du covoiturage.</p>
+      </div>
+      <div class="info">
+        <h3>Dormir</h3>
+        <p>Logement à préciser : gîte collectif, camping ou chacun sa chambre ? On vous tient au courant très vite.</p>
+      </div>
+      <div class="info">
+        <h3>Manger</h3>
+        <p>Huîtres, moules, cidre et teurgoule. Pasta party et repas du dimanche soir prévus pour tout le monde.</p>
+      </div>
+      <div class="info">
+        <h3>Apporter</h3>
+        <p>Baskets, coupe-vent (on est en Normandie), maillot de bain, bonne humeur et un déguisement pour la soirée.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2 class="section__title"><span>05</span> Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Je ne cours pas du tout, je peux venir ?</summary>
+        <p>Évidemment. Il faut aussi des gens pour encourager, faire des photos et tenir le ravito. Le weekend est pour tout le monde.</p>
+      </details>
+      <details>
+        <summary>C'est une vraie course chronométrée ?</summary>
+        <p>C'est une course entre amis, pas une compétition officielle. Il y aura sûrement un chrono pour les curieux, mais le classement le plus important, c'est celui du meilleur déguisement.</p>
+      </details>
+      <details>
+        <summary>Combien ça coûte ?</summary>
+        <p>À définir. On essaie de garder ça le plus léger possible.</p>
+      </details>
+      <details>
+        <summary>Je peux venir avec quelqu'un ?</summary>
+        <p>Oui, plus on est de fous… Prévenez-nous juste pour qu'on prévoie assez de couchages et de pâtes.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- INSCRIPTION -->
+  <section id="inscription" class="section section--green cta">
+    <img class="cta__logo" src="assets/courpasseulles-logo-fond-vert.svg" alt="" width="180" height="180">
+    <div>
+      <h2>Tu en es ?</h2>
+      <p>Les inscriptions ouvrent bientôt. Bloque déjà le weekend du 15 au 17 mai 2027.</p>
+      <a class="btn btn--light" href="#" aria-disabled="true">Inscriptions bientôt</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>CourPasSeulles · Courseulles-sur-Mer · 15-17 mai 2027</p>
+  <p>Fait avec des jambes lourdes et beaucoup d'amour.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
