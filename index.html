@@ -8,9 +8,16 @@
   <meta name="theme-color" content="#005227">
   <link rel="icon" type="image/png" href="assets/favicon-180.png">
   <link rel="apple-touch-icon" href="assets/favicon-180.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://studio-bernoulli.github.io/CourPasSeulles/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="CourPasSeulles">
+  <meta property="og:title" content="CourPasSeulles · 15-16-17 mai 2027 · Courseulles-sur-Mer">
+  <meta property="og:description" content="Un weekend entre potes et une course en bord de mer : 10 km ou 30 km.">
+  <meta property="og:url" content="https://studio-bernoulli.github.io/CourPasSeulles/">
+  <meta property="og:image" content="https://studio-bernoulli.github.io/CourPasSeulles/assets/courpasseulles-logo-1600.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -281,6 +288,10 @@
         <p>À définir. On essaie de garder ça le plus léger possible.</p>
       </details>
       <details>
+        <summary>Faut-il un certificat médical ?</summary>
+        <p>Non : c'est une course amicale et non compétitive. Chacun court sous sa propre responsabilité, donc écoute ton corps et demande l'avis d'un médecin en cas de doute. Tout est détaillé dans le <a href="reglement.html">règlement de la course</a>.</p>
+      </details>
+      <details>
         <summary>Je peux venir avec quelqu'un ?</summary>
         <p>Oui, plus on est de fous… Prévenez-nous juste pour qu'on prévoie assez de couchages et de pâtes.</p>
       </details>
@@ -300,8 +311,22 @@
 </main>
 
 <footer class="footer">
-  <p>CourPasSeulles · Courseulles-sur-Mer · 15-17 mai 2027</p>
-  <p>Fait avec des jambes lourdes et beaucoup d'amour.</p>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/courpasseulles-logo-fond-vert-600.png" alt="" width="64" height="64">
+      <div>
+        <p class="footer__name">CourPasSeulles</p>
+        <p>Courseulles-sur-Mer · 15-17 mai 2027</p>
+      </div>
+    </div>
+    <nav class="footer__links" aria-label="Informations légales">
+      <a href="reglement.html">Règlement de la course</a>
+      <a href="cgu.html">Conditions générales d'utilisation</a>
+      <a href="confidentialite.html">Confidentialité &amp; cookies</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+  </div>
+  <p class="footer__legal">© 2026-2027 CourPasSeulles · Événement amical, privé et non lucratif · Aucun cookie, aucun traceur.</p>
 </footer>
 
 <script src="script.js"></script>
