@@ -14,6 +14,5 @@ python3 -m http.server 8000
 
 ## À compléter
 
-- Adresse e-mail de contact dans les pages légales (chercher `[adresse e-mail de contact à compléter]`).
 - Cartes des parcours : remplacer les blocs `EMPLACEMENT CARTE` dans `index.html` par l'iframe de la carte (uMap, OpenStreetMap, Komoot, Strava…).
 - Horaires, logement, prix, lien d'inscription.
