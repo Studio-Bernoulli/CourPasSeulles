@@ -318,3 +318,43 @@ a { color: inherit; }
 .legal dd { margin: 0; }
 @media (max-width: 560px) { .legal dl { grid-template-columns: 1fr; } .legal dd { margin-bottom: 8px; } }
 .topbar__nav--simple { display: flex !important; position: static !important; flex-direction: row !important; padding: 0 !important; border: 0 !important; background: none !important; }
+
+/* Étapes des parcours */
+.stops { list-style: none; margin: 0; padding: 16px 20px 20px; display: grid; gap: 0; background: var(--white); border-top: 3px solid var(--green-700); }
+.stops li { position: relative; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 8px 0 8px 28px; }
+.stops li::before { content: ""; position: absolute; left: 4px; top: 13px; width: 12px; height: 12px; border-radius: 50%; background: var(--white); border: 3px solid var(--green-700); }
+.stops li:not(:last-child)::after { content: ""; position: absolute; left: 11px; top: 28px; bottom: -12px; border-left: 3px dotted var(--green-500); }
+.stops li.home::before { background: var(--green-700); }
+.stops li.turn::before { background: var(--mint-300); width: 16px; height: 16px; left: 2px; top: 11px; }
+.stops b { color: var(--green-700); }
+.stops span { font: .85rem var(--mono); color: var(--green-600); white-space: nowrap; }
+
+/* Ajustements téléphone */
+.race__stats li span { white-space: nowrap; }
+@media (max-width: 760px) {
+  .tabs { display: flex; width: 100%; }
+  .tabs button { flex: 1; padding: 10px 8px; font-size: .9rem; }
+  .map__placeholder .town text { display: none; }
+  .day li { grid-template-columns: 82px 1fr; }
+}
+@media (max-width: 560px) {
+  .topbar__nav--simple { display: none !important; }
+  .legal h2 { font-size: 1.2rem; }
+  .race__dist b { font-size: 4.5rem; }
+  .stops { padding: 12px 16px 16px; }
+  .stops span { font-size: .78rem; }
+  .countdown { gap: 6px; }
+}
+.map__placeholder figcaption { top: 16px; bottom: auto; }
+@media (min-width: 761px) {
+  .stops { display: flex; gap: 8px; padding: 20px 24px 22px; }
+  .stops li { flex: 1; flex-direction: column; align-items: flex-start; gap: 2px; padding: 26px 0 0; }
+  .stops li::before { left: 0; top: 0; }
+  .stops li.turn::before { left: -2px; top: -2px; }
+  .stops li:not(:last-child)::after { left: 18px; right: 4px; top: 6px; bottom: auto; border-left: 0; border-top: 3px dotted var(--green-500); }
+}
+@media (max-width: 760px) {
+  .map__placeholder figcaption { top: auto; }
+  .stops li { flex-direction: column; gap: 0; }
+  .stops li:not(:last-child)::after { bottom: -14px; }
+}

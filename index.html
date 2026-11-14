@@ -166,7 +166,7 @@
       <figure class="map" data-panel="short">
         <!-- EMPLACEMENT CARTE 10 KM : remplacer ce bloc par l'iframe de la carte (uMap, OpenStreetMap, Strava, Komoot…) -->
         <div class="map__placeholder">
-          <svg viewBox="0 0 600 340" role="img" aria-label="Tracé indicatif du 10 km : Courseulles vers Ver-sur-Mer et retour">
+          <svg viewBox="0 20 600 210" role="img" aria-label="Tracé indicatif du 10 km : Courseulles vers Ver-sur-Mer et retour">
             <path class="sea" d="M0 0 H600 V128 C540 140 480 118 420 132 C350 148 290 120 220 136 C150 150 80 124 0 140 Z"/>
             <path class="beach" d="M0 140 C80 124 150 150 220 136 C290 120 350 148 420 132 C480 118 540 140 600 128 V146 C540 158 480 136 420 150 C350 166 290 138 220 154 C150 168 80 142 0 158 Z"/>
             <text class="sea-label" x="300" y="60">La Manche</text>
@@ -176,18 +176,24 @@
             <g class="town"><circle cx="410" cy="172" r="7"/><text x="410" y="205">Graye-sur-Mer</text></g>
             <g class="town"><circle cx="300" cy="172" r="7"/><text x="300" y="205">Ver-sur-Mer</text></g>
             <g class="turn"><circle cx="300" cy="172" r="16"/><text x="300" y="177">↺</text></g>
-            <text class="compass" x="570" y="320">N ↑</text>
+            <text class="compass" x="556" y="222">N ↑</text>
           </svg>
           <figcaption>
             <b>Tracé indicatif · ~10 km aller-retour</b>
             <span>Départ de la maison, demi-tour à Ver-sur-Mer. La carte précise arrive bientôt.</span>
           </figcaption>
+          <ol class="stops">
+            <li class="home"><b>Courseulles-sur-Mer</b><span>Départ · 0 km</span></li>
+            <li class=""><b>Graye-sur-Mer</b><span>~2,5 km</span></li>
+            <li class="turn"><b>Ver-sur-Mer</b><span>Demi-tour · ~5 km</span></li>
+            <li class="home"><b>Courseulles-sur-Mer</b><span>Arrivée · ~10 km</span></li>
+          </ol>
         </div>
       </figure>
       <figure class="map" data-panel="long" hidden>
         <!-- EMPLACEMENT CARTE 30 KM : remplacer ce bloc par l'iframe de la carte -->
         <div class="map__placeholder">
-          <svg viewBox="0 0 600 340" role="img" aria-label="Tracé indicatif du 30 km : Courseulles vers Arromanches-les-Bains et retour">
+          <svg viewBox="0 20 600 210" role="img" aria-label="Tracé indicatif du 30 km : Courseulles vers Arromanches-les-Bains et retour">
             <path class="sea" d="M0 0 H600 V128 C540 140 480 118 420 132 C350 148 290 120 220 136 C150 150 80 124 0 140 Z"/>
             <path class="beach" d="M0 140 C80 124 150 150 220 136 C290 120 350 148 420 132 C480 118 540 140 600 128 V146 C540 158 480 136 420 150 C350 166 290 138 220 154 C150 168 80 142 0 158 Z"/>
             <text class="sea-label" x="300" y="60">La Manche</text>
@@ -198,12 +204,19 @@
             <g class="town"><circle cx="190" cy="172" r="7"/><text x="190" y="205">Asnelles</text></g>
             <g class="town"><circle cx="70" cy="172" r="7"/><text x="70" y="205">Arromanches</text></g>
             <g class="turn"><circle cx="70" cy="172" r="16"/><text x="70" y="177">↺</text></g>
-            <text class="compass" x="570" y="320">N ↑</text>
+            <text class="compass" x="556" y="222">N ↑</text>
           </svg>
           <figcaption>
             <b>Tracé indicatif · ~30 km aller-retour</b>
             <span>Cap à l'ouest jusqu'à Arromanches, puis retour. La carte précise arrive bientôt.</span>
           </figcaption>
+          <ol class="stops">
+            <li class="home"><b>Courseulles-sur-Mer</b><span>Départ · 0 km</span></li>
+            <li class=""><b>Ver-sur-Mer</b><span>~5 km</span></li>
+            <li class=""><b>Asnelles</b><span>~10 km</span></li>
+            <li class="turn"><b>Arromanches-les-Bains</b><span>Demi-tour · ~15 km</span></li>
+            <li class="home"><b>Courseulles-sur-Mer</b><span>Arrivée · ~30 km</span></li>
+          </ol>
         </div>
       </figure>
     </div>
