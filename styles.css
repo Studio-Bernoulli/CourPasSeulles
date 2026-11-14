@@ -318,4 +318,3 @@ a { color: inherit; }
 .legal dd { margin: 0; }
 @media (max-width: 560px) { .legal dl { grid-template-columns: 1fr; } .legal dd { margin-bottom: 8px; } }
 .topbar__nav--simple { display: flex !important; position: static !important; flex-direction: row !important; padding: 0 !important; border: 0 !important; background: none !important; }
-.todo { background: #fff3b0; padding: 0 4px; border-radius: 4px; }
